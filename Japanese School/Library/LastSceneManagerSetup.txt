@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/JP_School/Scene/SCHOOL.unity
+  isLoaded: 1
+  isActive: 1
