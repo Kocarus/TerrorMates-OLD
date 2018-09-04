@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 114542230738971616}
   - component: {fileID: 114411659205072922}
   - component: {fileID: 114837974460284020}
+  - component: {fileID: 114532281820488492}
   m_Layer: 30
   m_Name: HeroHDWeapons
   m_TagString: Player
@@ -5369,6 +5370,25 @@ MonoBehaviour:
   PositionExitOffset: {x: 0, y: -1, z: 0}
   RotationExitOffset: {x: 40, y: 0, z: 0}
   DoSpringsInLateUpdate: 0
+--- !u!114 &114532281820488492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1224760781613528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1267208747, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 4426224616986378}
+  m_ChildIndex: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.5
+  m_InterpolateMovement: 0.5
 --- !u!114 &114542230738971616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5384,11 +5404,10 @@ MonoBehaviour:
   - {fileID: 114029912907504014}
   - {fileID: 114091114553852828}
   - {fileID: 20023447676247036}
-  - {fileID: 95396175196221826}
   remoteLayerName: RemotePlayer
   dontDrawLayerName: DontDraw
-  playerGraphics: {fileID: 0}
-  playerUIPrefab: {fileID: 0}
+  playerGraphics: {fileID: 100006, guid: ece539b2abd7040c3b3a773590276b8b, type: 3}
+  playerUIPrefab: {fileID: 167956, guid: b135717c33bc8f64e8f5fc0953c22a7c, type: 2}
   playerUIInstance: {fileID: 0}
 --- !u!114 &114553213824889704
 MonoBehaviour:

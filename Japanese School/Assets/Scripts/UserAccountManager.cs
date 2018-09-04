@@ -102,8 +102,11 @@ public class UserAccountManager : MonoBehaviour {
 		{
 			yield return eeee.Current;
 		}
-		WWW returnedddd = eeee.Current as WWW;
-		if (returnedddd.text == "Error")
+		string response = eeee.Current as string; // << The returned string from the request
+
+		// WWW returnedddd = eeee.Current as WWW;
+		// if (returnedddd.text == "Error")
+		if (response == "Error")
 		{
 			//Error occurred. For more information of the error, DC.Login could
 			//be used with the same username and password
@@ -111,7 +114,8 @@ public class UserAccountManager : MonoBehaviour {
 		}
 		else
 		{
-			if (returnedddd.text == "ContainsUnsupportedSymbol")
+			// if (returnedddd.text == "ContainsUnsupportedSymbol")
+			if (response == "ContainsUnsupportedSymbol")
 			{
 				//One of the parameters contained a - symbol
 				Debug.Log("Get Data Error: Contains Unsupported Symbol '-'");
@@ -119,7 +123,10 @@ public class UserAccountManager : MonoBehaviour {
 			else
 			{
 				//Data received in returned.text variable
-				string DataRecieved = returnedddd.text;
+				// string DataRecieved = returnedddd.text;
+				// data = DataRecieved;
+
+				string DataRecieved = response;
 				data = DataRecieved;
 			}
 		}
